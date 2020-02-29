@@ -1,0 +1,12 @@
+/home/ec2-user/was1/src/main/java/com/apress/spring/domain/Product.java
+/home/ec2-user/was1/src/main/java/com/apress/spring/config/ConnectionManager.java
+/home/ec2-user/was1/src/main/java/com/apress/spring/config/ResourceOAuthSecurityConfiguration.java
+/home/ec2-user/was1/src/main/java/com/apress/spring/exception/ProductNotFoundException.java
+/home/ec2-user/was1/src/main/java/com/apress/spring/repository/ProductRepository.java
+/home/ec2-user/was1/src/main/java/com/apress/spring/exception/NoMoreStockException.java
+/home/ec2-user/was1/src/main/java/com/apress/spring/repository/JournalRepository.java
+/home/ec2-user/was1/src/main/java/com/apress/spring/web/ProdController.java
+/home/ec2-user/was1/src/main/java/com/apress/spring/SpringBootJournalApplication.java
+/home/ec2-user/was1/src/main/java/com/apress/spring/domain/RowLock.java
+/home/ec2-user/was1/src/main/java/com/apress/spring/web/JournalController.java
+/home/ec2-user/was1/src/main/java/com/apress/spring/domain/Journal.java
