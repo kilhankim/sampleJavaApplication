@@ -104,8 +104,29 @@ CREATE TABLE `product` (
   `prod_nm` varchar(20) DEFAULT NULL,
   `prod_price` mediumint(10) DEFAULT NULL,
   `prod_desc` varchar(200) DEFAULT NULL,
+  `stock_cnt` mediumint(10) DEFAULT NULL,
   PRIMARY KEY (`prod_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+DATA INSERT
+
+mysql> CREATE TABLE `product` (
+    ->   `prod_id` mediumint(10) NOT NULL,
+    ->   `prod_nm` varchar(20) DEFAULT NULL,
+    ->   `prod_price` mediumint(10) DEFAULT NULL,
+    ->   `prod_desc` varchar(200) DEFAULT NULL,
+    ->   `stock_cnt` mediumint(10) DEFAULT NULL,
+    ->   PRIMARY KEY (`prod_id`)
+    -> ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> 
+mysql> 
+mysql> INSERT INTO `product` VALUES (1,'20180618',1000,'desc test',999999)
+    -> ;
+
+
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

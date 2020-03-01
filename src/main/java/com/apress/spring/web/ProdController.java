@@ -94,11 +94,7 @@ public class ProdController {
             log.error(" random sleepTime : " + sleepTime );
         }
 
-        log.info("<=========================== /listProduct start ===================================>");
-        log.info("remoteIP : " + remoteIP + " remotePort : " + remotePort + " \n");
-        log.info("<=========================== /listProduct   end ===================================>");
         HashMap resultmap = new HashMap();
-
        
         List result = repo.findAll();
         if(result != null)

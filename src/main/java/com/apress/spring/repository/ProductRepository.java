@@ -35,8 +35,6 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
         @Query("select a from Product a  where prod_id=:id and sleep(:sleepTime)=0")
         Product findByCustomQueryRandomSleepTime(@Param("id") long id, @Param("sleepTime") int sleepTime);
 
-
-
 	@Query("select a from Product a  where prod_id=:id")
 	Product findByCustomQuery(@Param("id") long id);
 
