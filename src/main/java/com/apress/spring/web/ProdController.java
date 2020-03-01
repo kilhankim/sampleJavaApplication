@@ -97,8 +97,10 @@ public class ProdController {
         log.info("<=========================== /listProduct start ===================================>");
         log.info("remoteIP : " + remoteIP + " remotePort : " + remotePort + " \n");
         log.info("<=========================== /listProduct   end ===================================>");
-        List result = repo.findAll();
         HashMap resultmap = new HashMap();
+
+       
+        List result = repo.findAll();
         if(result != null)
         {
             resultmap.put("resultMsg" ,"Success");
@@ -112,6 +114,9 @@ public class ProdController {
 
         }
 
+
+        
+
         return resultmap;
 
 //        return repo.findAll();
@@ -122,6 +127,7 @@ public class ProdController {
     public @ResponseBody HashMap jsonDetailProduct(Model model, @PathVariable long prod_id) {
 
        int sleepTime = new Random().nextInt(100);
+       log.info("/prod/{prod_id} is called \n" + prod_id);
 
         for(int i=0; i<1000; i++)
         {

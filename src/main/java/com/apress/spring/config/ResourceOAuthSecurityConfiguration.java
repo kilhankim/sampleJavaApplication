@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Bean;
 
 @Configuration
 @EnableAuthorizationServer
-//@EnableResourceServer
+@EnableResourceServer
 public class ResourceOAuthSecurityConfiguration extends ResourceServerConfigurerAdapter{
 
 	@Override
