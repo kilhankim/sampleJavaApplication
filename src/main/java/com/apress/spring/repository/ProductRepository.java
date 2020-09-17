@@ -60,6 +60,10 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 	@Query("select stock_cnt from Product where prod_id=:prod_id")
         int getStockCntById(@Param("prod_id") long prod_id);
 
+	@Query("select count(*) from Product a, Product b ")
+        int countProduct();
+
+
         @Modifying
 	@Query("delete Product a where a.prod_id=:prod_id ")
         int deleteProductById(@Param("prod_id") long prod_id);

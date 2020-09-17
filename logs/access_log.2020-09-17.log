@@ -1,0 +1,8 @@
+2020-09-17 16:08:36	200	POST /oauth/token HTTP/1.1	PostmanRuntime/7.26.5	-	0:0:0:0:0:0:0:1	177   
+2020-09-17 16:09:01	200	GET /prod/ HTTP/1.1	PostmanRuntime/7.26.5	-	0:0:0:0:0:0:0:1	163   
+2020-09-17 18:07:15	401	GET /prod/ HTTP/1.1	PostmanRuntime/7.26.5	-	0:0:0:0:0:0:0:1	117   
+2020-09-17 18:07:20	200	POST /oauth/token HTTP/1.1	PostmanRuntime/7.26.5	-	0:0:0:0:0:0:0:1	177   
+2020-09-17 18:07:34	200	GET /prod/ HTTP/1.1	PostmanRuntime/7.26.5	-	0:0:0:0:0:0:0:1	163   
+2020-09-17 18:07:49	401	GET /prod/ HTTP/1.1	PostmanRuntime/7.26.5	-	0:0:0:0:0:0:0:1	117   
+2020-09-17 18:07:56	200	GET /prod/ HTTP/1.1	PostmanRuntime/7.26.5	-	0:0:0:0:0:0:0:1	163   
+2020-09-17 18:08:08	200	GET /cpu/ HTTP/1.1	PostmanRuntime/7.26.5	-	0:0:0:0:0:0:0:1	58   

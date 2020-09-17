@@ -119,6 +119,30 @@ public class ProdController {
     }
 
 
+
+    @RequestMapping(value = "/cpu/", produces = { MediaType.APPLICATION_JSON_VALUE })
+    public @ResponseBody HashMap countProduct() {
+
+        int result = 0;
+        HashMap resultmap = new HashMap();
+       
+        result = repo.countProduct();
+         
+        resultmap.put("resultMsg" ,"Success");
+        resultmap.put("item",result + " are selected");
+        
+
+
+        
+
+        return resultmap;
+
+//        return repo.findAll();
+    }
+
+
+
+
     @RequestMapping(value = "/prod/{prod_id}", method=RequestMethod.GET)
     public @ResponseBody HashMap jsonDetailProduct(Model model, @PathVariable long prod_id) {
 
