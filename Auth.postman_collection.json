@@ -1,0 +1,320 @@
+{
+	"info": {
+		"_postman_id": "23fcd0e6-8913-4b03-aa45-3815b6576c78",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "00_토큰발급",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "superuser",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "sollab123",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "read",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://admin:kkh4790@localhost:9999/oauth/token",
+					"protocol": "http",
+					"auth": {
+						"user": "admin",
+						"password": "kkh4790"
+					},
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "01_상품전체조회 Copy",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer c8dbb2c7-5dbb-4a9e-bffb-a5dac24eda10"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9999/cpu/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"cpu",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02_상품상세조회",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer c8dbb2c7-5dbb-4a9e-bffb-a5dac24eda10"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9999/prod/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"prod",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "00_토큰발급 Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "superuser",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "sollab123",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "read",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://admin:kkh4790@182.195.31.33:8080/oauth/token",
+					"protocol": "http",
+					"auth": {
+						"user": "admin",
+						"password": "kkh4790"
+					},
+					"host": [
+						"182",
+						"195",
+						"31",
+						"33"
+					],
+					"port": "8080",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "00_토큰발급",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "superuser",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "sollab123",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "read",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://admin:kkh4790@182.195.31.33:8080/oauth/token",
+					"protocol": "http",
+					"auth": {
+						"user": "admin",
+						"password": "kkh4790"
+					},
+					"host": [
+						"182",
+						"195",
+						"31",
+						"33"
+					],
+					"port": "8080",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "00_토큰발급_username_password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "superuser",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "sollab123",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "read",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://admin:kkh4790@182.195.31.33:8080/oauth/token",
+					"protocol": "http",
+					"auth": {
+						"user": "admin",
+						"password": "kkh4790"
+					},
+					"host": [
+						"182",
+						"195",
+						"31",
+						"33"
+					],
+					"port": "8080",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "01_상품전체조회",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "superuser",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "sollab123",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "read",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://admin:kkh4790@182.195.31.33:8080/oauth/token",
+					"protocol": "http",
+					"auth": {
+						"user": "admin",
+						"password": "kkh4790"
+					},
+					"host": [
+						"182",
+						"195",
+						"31",
+						"33"
+					],
+					"port": "8080",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -20,7 +20,10 @@ public class ResourceOAuthSecurityConfiguration extends ResourceServerConfigurer
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests()
-		   .anyRequest().authenticated();
+		   .anyRequest().authenticated().and()
+		   .formLogin()
+		   .permitAll().and()
+		   .csrf().disable();
 	}
 
  //       @Bean
