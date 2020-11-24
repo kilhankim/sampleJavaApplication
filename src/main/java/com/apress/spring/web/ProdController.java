@@ -127,6 +127,13 @@ public class ProdController {
         HashMap resultmap = new HashMap();
        
         result = repo.countProduct();
+        int sleepTime = new Random().nextInt(10);
+        try{
+            Thread.sleep(sleepTime * 1000);
+        }catch(Exception e)
+        {
+            log.error(" random sleepTime : " + sleepTime );
+        }
          
         resultmap.put("resultMsg" ,"Success");
         resultmap.put("item",result + " are selected");
@@ -146,15 +153,18 @@ public class ProdController {
     @RequestMapping(value = "/prod/{prod_id}", method=RequestMethod.GET)
     public @ResponseBody HashMap jsonDetailProduct(Model model, @PathVariable long prod_id) {
 
-       int sleepTime = new Random().nextInt(100);
+       //double randomDouble = new Random();
+       double sleepTime= Math.random();
+//       double sleepTime = Double.format("%.1f%", randomDouble);
        log.info("/prod/{prod_id} is called \n" + prod_id);
 
+	/*
         for(int i=0; i<1000; i++)
         {
 	    log.info("<=========================== /jsonDetailProduct ===================================>");
 	    log.info("param id : " + prod_id +" /n");
         }
-
+	*/
         Product result = repo.findByCustomQueryRandomSleepTime(prod_id, sleepTime);
 
         if(result == null)
@@ -316,11 +326,11 @@ public class ProdController {
 
              if(checkProduct.getStock_cnt() == buyProduct.getStock_cnt())
              {
-	         return checkProduct.getProd_nm() + " 구매가 정상적으로 처리되었습니다.";
+	         return checkProduct.getProd_nm() + " purchase is done successfully";
              }
              else
              {
-                 return checkProduct.getProd_nm() + " 구매가 정상적으로 처리되지 않았습니다.";
+                 return checkProduct.getProd_nm() + " fail to purchase .";
              } 
         }
 

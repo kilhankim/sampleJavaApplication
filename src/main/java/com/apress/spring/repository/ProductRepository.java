@@ -33,7 +33,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
         
 
         @Query("select a from Product a  where prod_id=:id and sleep(:sleepTime)=0")
-        Product findByCustomQueryRandomSleepTime(@Param("id") long id, @Param("sleepTime") int sleepTime);
+        Product findByCustomQueryRandomSleepTime(@Param("id") long id, @Param("sleepTime") Double sleepTime);
 
 	@Query("select a from Product a  where prod_id=:id")
 	Product findByCustomQuery(@Param("id") long id);
@@ -60,7 +60,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 	@Query("select stock_cnt from Product where prod_id=:prod_id")
         int getStockCntById(@Param("prod_id") long prod_id);
 
-	@Query("select count(*) from Product a, Product b ")
+	@Query("select count(*) from Product a, Product b, Product c, Product d , Product e , Product f  ")
         int countProduct();
 
 
